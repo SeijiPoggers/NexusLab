@@ -4,6 +4,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins";
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.home{
+    position: relative;
+    min-height: 100vh;
+    background-color: #1f2223;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 0 90px;
+    overflow: hidden;
 }
 
