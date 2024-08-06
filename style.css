@@ -19,3 +19,106 @@
     overflow: hidden;
 }
 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 90px;
+    font-size: 22px;
+    color: white;
+    opacity: 1;
+    animation: to-bottom 1s ease forwards;
+}
+
+header nav a{
+    font-size: 26px;
+    margin-left: 78px;
+    color: white;
+    transition: .3s;
+}
+
+header nav .active,
+header nav a:hover{
+    color: #01fa04
+}
+
+.text{
+    width: 50%;
+    z-index:99;
+}
+
+.text h1 {
+    color: #01fa04;
+    font-size: 78px;
+    animation: to-right 1s ease forwards 1.3s;
+}
+
+.text h1:nth-child(2){
+    color: white;
+    font-size:68px;
+    animation-delay: 1.5s;
+}
+
+.text{
+    margin: 40px 0;
+    font-size: 25px;
+    width: 75%;
+    color: #979797;
+    animation: to-right 1s ease forwards 1.7s;
+}
+
+.btn-box{
+    display: flex;
+    gap: 20px;
+}
+.btn{
+    position: relative;
+    color: white;
+    padding: 12px 30px;
+    font-size: 22px;
+    border: 2px solid #01fa04;
+    background: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .3s;
+    animation: to-right 1s ease forwards 1.9s;
+}
+
+.btn:hover,
+.btn:nth-child(2){
+    color: black;
+    background-color: #01fa04;
+    box-shadow: 0 0 15px #01fa04;
+}
+
+.btn:nth-child(2):hover{
+    color: white;
+    background: transparent;
+    box-shadow: none;
+}
+
+.home img{
+    position: absolute;
+    pointer-events: none;
+    opacity: 1;
+}
+
+.face{ 
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    animation: face 1.5s ease forwards; 
+}
+
+.objects{
+    width: 75%;
+    right: -15%;
+    bottom: 50%;
+    margin-bottom: -35%;
+    animation: rotate 25s linear infinite fade-in 1s ease forwards 1.2s;
+}
